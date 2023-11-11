@@ -29,6 +29,27 @@
   <div class="container py-5">
         <div class="row d-flex justify-content-center">
             <div class="col-md-6">
+
+                <span>
+                    <?php 
+                    if(isset($addUser)){
+                    
+                        ?>
+                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <?php echo $addUser 
+                            ?>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+
+                        <?php 
+                       
+                        
+                     } ?>
+                </span>
+
+
                 <div class="card">
                     <h5 class='card-header'>Registration From</h5>
                     <div class="card-body">
